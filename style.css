@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-image: url('Assets/bg.jpeg'); */
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+video {
+  width: 100vw;
+  height: 120vh;
+  position: absolute;
+  bottom: 0;
+}
+/* Window  */
+.window{
+  display: flex;
+}
+.window img{
+  width: 40px;
+  height: 40px;
+}
+
+.recycle{
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+.edge{
+  cursor: pointer;
+  position: absolute;
+  top: 120px;
+  left: 20px;
+}
+/* taskbar  */
+.taskbar {
+  z-index: 1000;
+  width: 100%;
+  height: 35px;
+  /* background-image: linear-gradient(to left, white, #f3f3f3); */
+  background: linear-gradient(
+    to right bottom,
+    rgba(247, 246, 246, 0.856),
+    rgba(255, 255, 255, 0.877)
+  );
+  /* background-color: #f3f3f3; */
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+
+.taskbar img {
+  cursor: pointer;
+  margin: 0 10px;
+  width: 21px;
+  height: 21px;
+}
+
+.tasks{
+  cursor: pointer;
+  width: 34px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tasks:hover{
+  background: linear-gradient(
+    to right bottom,
+    rgb(196, 195, 195),
+    rgba(240, 237, 237, 0.877)
+  ); 
+}
+.tasks:hover .fa-windows{
+  color: #4cbd0b;
+}
+
+/* startmenu  */
+.startmenu {
+  z-index: 100;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0.884),
+    #f3f3f3d3
+  );
+  opacity: 1;
+  position: absolute;
+  bottom: -545px;
+  left: 65vh;
+  width: 100%;
+  margin: 0 auto;
+  height: 550px;
+  width: 550px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in; 
+}
+
+section {
+  width: 470px;
+  display: block;
+  margin: auto auto;
+}
+
+section .upper-sec {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* upper section  */
+.upper-sec span {
+  cursor: pointer;
+  border: 1px solid grey;
+  padding: 3px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 4px 0px grey;
+}
+.lower-sec span {
+  cursor: pointer;
+  border: 1px solid grey;
+  padding: 3px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 4px 0px grey;
+}
+
+
+
+/* pinned icons  */
+.pinned {
+  display: grid;
+  grid-column-gap: 25px;
+  grid-row-gap: 5px;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 10px;
+}
+
+.pinned-icon {
+  width: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.pinned-icon img {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+/* lower section  */
+section .lower-sec {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* recommended icons  */
+.recommended{
+  display: grid;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.recommended-icon{
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: nowrap;
+  /* width: 50%; */
+}
+
+.recommended-icon img{
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+
+/*Profile */
+.account{
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile{
+  display: flex;
+  align-items: center;
+}
+
+.profile strong{
+  margin-left: 5px;
+}
+.account img{
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+}
+/* fontawesome icons */
+.fa-windows {
+  cursor: pointer;
+  color: #156efe;
+}
+
+/* styles.css */
+/* For the Windows 10 CSS3 project */
+/* (c) 2016 Nitin Seshadri */
+/**/
+body {
+  background: url('img/img0_3840x2160.jpg') center top no-repeat;
+  background-size: cover;
+  overflow-y: hidden;
+  margin: 0 0;
+  user-select: none;
+  -webkit-user-select: none;
+  }
+  /* remember to define focus styles! */
+  :focus {
+      outline: 0;
+  }
+  div.desktop {
+  width: 100%;
+  height: 100vh;
+  }
+  div.window {
+  border: #0078D7;
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: inset 0 0 0 1px rgba(246,246,247,0.92), 0 7px 19px rgba(0,0,0,0.9);
+  padding: 0px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  }
+  .titleFrame {
+  position: relative;
+  background: #FFFFFF;
+  height: 30px;
+  }
+  .titleContent {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%)
+  }
+  .titleText {
+  color: black;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  display: inline;
+  padding: 20px;
+  }
+  .titleText.noIcon {
+  padding-left: 0;
+  }
+  .titleContent {
+  padding: 6px 10px;
+  display: inline;
+  }
+  .iconContainer {
+  display: inline;
+  position: relative;
+  }
+  .icon {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%)
+  }
+  .closeBtn {
+  display: inline;
+  float: right;
+  width: 45px;
+  height: 30px;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  margin: auto auto;
+  text-align: center;
+  transition: 0.2s;
+  }
+  .closeBtn:hover {
+  background: red;
+  color: white;
+  }
+  div.winbody {
+  background: #F0F0F0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  left: 0;
+  top: 0;
+  }
+  div.menubar {
+  background: #FFFFFF;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-size: 12px;
+  padding: 0 0;
+  border-left:none;
+  border-right:none;
+  border-top:none;
+  border-bottom:solid #F0F0F0 2px;
+  }
+  button.menubarItem {
+  background: #FFFFFF;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-size: 12px;
+  border: 2px solid white;
+  padding: 0px 4px;
+  transition: 0.1s;
+  }
+  button.menubarItem:hover, button.menubarItem:active {
+  color: black;
+  background: #91C9F7;
+  border: 2px solid #91C9F7;
+  }
+  input, textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px; 
+  border-radius: 0px;
+  }
+  .winbanner {
+  display: block;
+  margin: auto auto;
+  }
+  .wintext {
+  display: block;
+  margin: auto auto;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-size: 9pt;
+  font-weight: 400;
+  text-align: left;
+  padding: 10px;
+  }
+  .winlink, .winlink:hover, .winlink:active, .winlink:visited {
+  color: #0078D7;
+  text-decoration: underline;
+  }
+  #winver {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  }
+  #notepad {
+  position: absolute;
+  top: 75px;
+  left: 75px;
+  min-width: 320px;
+  min-height: 200px;
+  width: 640px;
+  height: 480px;
+  overflow: hidden;
+  }
+  .dropdown {
+  display: none;
+  position: absolute;
+  background-color: #F2F2F2;
+  padding: 2px;
+  width: 195px;
+  height: auto;
+  overflow: auto;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  border: lightgray;
+  border-width: 1px;
+  border-style: solid;
+  }
+  .dropdown a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-size: 9pt;
+  display: block;
+  padding-left: 30px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 10px;
+  transition: 0.1s;
+  }
+  .dropdown a:hover {
+  background-color: #91C9F7;
+  }
+  hr.dropdown-separator { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  }
+  #npOpen {
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+  
+  }
+  .textBox {
+  background: white;
+  font-family: Consolas;
+  font-size: 11pt;
+  border: #0078D7;
+  border-width: 1px;
+  border-style: solid;
+  padding: 5px; 
+  width: 98.25%;
+  height: 87.25%;
+  overflow: scroll;
+  resize: none;
+  }
+  div.btnFrame {
+  padding: 10px;
+  margin: auto auto;
+  float: right;
+  }
+  button.winbutton {
+  background: #E1E1E1;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-size: 9pt;
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+  padding: 3px 20px;
+  border: lightgray;
+  border-width: 1px;
+  border-style: solid;
+  transition: 0.1s;
+  }
+  button.winbutton:hover {
+  background: #E5F1FB;
+  border: #0078D7;
+  border-width: 1px;
+  border-style: solid;
+  }
+  button.winbutton:active {
+  background: #CCE4F7;
+  }
+  
+  
