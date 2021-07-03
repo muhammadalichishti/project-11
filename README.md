@@ -19,7 +19,7 @@ Sharing Experience + Note 4.0: it was the last project of windows operationg sys
     <td>1.</td>
     <td>
       <p align="center">
-      <img src="./Readme Pictures/Windows XP (1).png" title="Loading Screen" alt="Loading Screen Picture" />
+      <img src="./Readme Pictures/Windows XP (1).PNG" title="Loading Screen" alt="Loading Screen Picture" />
       <br />
       Loading Screen
       </p>
