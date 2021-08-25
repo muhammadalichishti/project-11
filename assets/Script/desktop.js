@@ -45,17 +45,17 @@ document.querySelector(".cls").onclick = function () {
 
 document.querySelector(".muhammad-ali").ondblclick = function () {
     setTimeout( ()=> { this.classList.remove("selected") }, 2 )
-    window.open("https://mu-ali.github.io/")
+    window.open("https://startwithali.github.io/")
 }
 
 document.querySelector(".my-computer").ondblclick = function () {
     setTimeout( ()=> { this.classList.remove("selected") }, 2 )
-    window.open("https://github.com/mu-ali/")
+    window.open("https://github.com/startwithali/")
 }
 
 document.querySelector(".my-network").ondblclick = function () {
     setTimeout( ()=> { this.classList.remove("selected") }, 2 )
-    window.open("https://twitter.com/mu_ali_c/")
+    window.open("https://twitter.com/startwithali/")
 }
 
 document.querySelector(".note-pad").ondblclick = function () {
